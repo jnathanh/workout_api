@@ -1,2 +1,4 @@
 language: ruby
 services: mysql
+before_install:
+  - mysql -e 'CREATE DATABASE workout_api_test;'
